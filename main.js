@@ -3,7 +3,9 @@ const { app, BrowserWindow } = require("electron")
 function criarJanela() {
     const janela = new BrowserWindow({
         width: 1200,
-        height: 800
+        height: 800,
+        //add icon
+        icon: "public/assets/logo.png",
     })
 
     janela.loadFile("public/login.html")
